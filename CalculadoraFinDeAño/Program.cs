@@ -34,7 +34,7 @@ namespace CalculadoraFinDeAño
 
 
         /// <summary>
-        /// 
+        /// Función para Validar 
         /// </summary>
         /// <param name="day"></param>
         /// <param name="mounth"></param>
