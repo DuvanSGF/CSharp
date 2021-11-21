@@ -10,10 +10,30 @@ namespace CalculadoraFinDeAño
         public static int MounthCalculate { get; set; }
 
     }
+
+    class Temp
+    {
+
+        public int num = 2;
+
+        public Temp() { num++; }
+
+        ~Temp() { num++; }
+
+    }
+
+
     class Program
     {
+        static void Print<x>(x Y)
+        {
+
+            Console.WriteLine(Y);
+        }
+
         static void Main(string[] args)
         {
+
             Console.WriteLine("Calculadora para Saber Cuantos Dias Faltan Para Acabarse el año 2021: ");
             Console.WriteLine("Dia: ");
             int day = Convert.ToInt32(Console.ReadLine());
@@ -83,15 +103,11 @@ namespace CalculadoraFinDeAño
 
                 default:
                     Console.WriteLine("El mes digitado No existe, Por favor Digita el Mes Correctamente!");
-                    break;
+                    return false;
 
             }
             return true;
-
         }
-
-
-
     }
     /// <summary>
     /// Enumeración para Imprimir el Mes Seleccionado
