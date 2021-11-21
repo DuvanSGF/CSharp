@@ -11,26 +11,8 @@ namespace CalculadoraFinDeAño
 
     }
 
-    class Temp
-    {
-
-        public int num = 2;
-
-        public Temp() { num++; }
-
-        ~Temp() { num++; }
-
-    }
-
-
     class Program
     {
-        static void Print<x>(x Y)
-        {
-
-            Console.WriteLine(Y);
-        }
-
         static void Main(string[] args)
         {
 
