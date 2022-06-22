@@ -3,18 +3,25 @@ using System.Text;
 
 namespace CalculadoraFinDeAño
 {
+
+    #region Variables
+    /// <summary>
+    /// Variables
+    /// </summary>
     public class Global
     {
         public static int dayCalculate { get; set; }
         public static int dayResult { get; set; }
-        public static int MounthCalculate { get; set; }    
+        public static int MounthCalculate { get; set; }
         public static int currentlyYear { get; set; }
         public static string date { get; set; }
         public static int day { get; set; }
         public static int mounth { get; set; }
-      
-    }
 
+    }
+    #endregion
+
+    #region Main
     /// <summary>
     /// Main
     /// </summary>
@@ -28,7 +35,7 @@ namespace CalculadoraFinDeAño
             Console.WriteLine("Dia: ");
 
             bool validateDay = ValidationDay(Console.ReadLine());
-            if (validateDay == false){ Environment.Exit(0);}
+            if (validateDay == false) { Environment.Exit(0); }
 
             Console.WriteLine("Mes: ");
             bool validateMounth = ValidationMounth(Console.ReadLine());
@@ -42,8 +49,10 @@ namespace CalculadoraFinDeAño
                 Console.WriteLine("Faltan {0} Meses y {1} Dias para Acabarse el año {2} ", Global.MounthCalculate, Global.dayCalculate, Global.currentlyYear);
             }
             Console.WriteLine("La fecha actual es: {0} ", Global.date);
-         
+
         }
+        #endregion
+
     #region Functions
 
         /// <summary>
