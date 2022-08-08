@@ -64,7 +64,7 @@ namespace CalculadoraFinDeAño
         {
             try
             {
-                int result = Convert.ToInt32(Console.ReadLine());
+                int result = Int32.Parse(mounth);
                 Global.mounth = result;
                 return true;
             }
