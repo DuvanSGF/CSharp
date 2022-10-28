@@ -23,7 +23,7 @@ namespace CalculadoraFinDeAño
 
     #region Main
     /// <summary>
-    /// Main
+    /// Funcion principal de la caluladora - Clean Code
     /// </summary>
     class Program
     {
